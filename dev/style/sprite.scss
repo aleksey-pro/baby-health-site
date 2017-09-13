@@ -1,0 +1,144 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-aid {
+  background-image: url(../img/sprite.png);
+  background-position: -46px -359px;
+  width: 40px;
+  height: 40px;
+}
+.icon-apple {
+  background-image: url(../img/sprite.png);
+  background-position: -212px -140px;
+  width: 85px;
+  height: 90px;
+}
+.icon-babyandmom {
+  background-image: url(../img/sprite.png);
+  background-position: -297px -120px;
+  width: 93px;
+  height: 103px;
+}
+.icon-babyandmom1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -267px;
+  width: 92px;
+  height: 92px;
+}
+.icon-babyandmom2 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 297px;
+  height: 140px;
+}
+.icon-conults {
+  background-image: url(../img/sprite.png);
+  background-position: -189px -302px;
+  width: 161px;
+  height: 34px;
+}
+.icon-dialog {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -359px;
+  width: 46px;
+  height: 40px;
+}
+.icon-diet {
+  background-image: url(../img/sprite.png);
+  background-position: -392px -275px;
+  width: 71px;
+  height: 31px;
+}
+.icon-doctor {
+  background-image: url(../img/sprite.png);
+  background-position: -92px -267px;
+  width: 97px;
+  height: 87px;
+}
+.icon-heart {
+  background-image: url(../img/sprite.png);
+  background-position: -392px -306px;
+  width: 43px;
+  height: 47px;
+}
+.icon-logo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -140px;
+  width: 212px;
+  height: 127px;
+}
+.icon-measurment {
+  background-image: url(../img/sprite.png);
+  background-position: -435px -306px;
+  width: 36px;
+  height: 42px;
+}
+.icon-pelenki {
+  background-image: url(../img/sprite.png);
+  background-position: -297px -223px;
+  width: 94px;
+  height: 28px;
+}
+.icon-phon-off {
+  background-image: url(../img/sprite.png);
+  background-position: -297px 0px;
+  width: 95px;
+  height: 120px;
+}
+.icon-pills {
+  background-image: url(../img/sprite.png);
+  background-position: -86px -359px;
+  width: 36px;
+  height: 38px;
+}
+.icon-plus {
+  background-image: url(../img/sprite.png);
+  background-position: -392px -179px;
+  width: 48px;
+  height: 48px;
+}
+.icon-pregnancy {
+  background-image: url(../img/sprite.png);
+  background-position: -189px -267px;
+  width: 162px;
+  height: 35px;
+}
+.icon-rags {
+  background-image: url(../img/sprite.png);
+  background-position: -392px 0px;
+  width: 80px;
+  height: 93px;
+}
+.icon-search {
+  background-image: url(../img/sprite.png);
+  background-position: -392px -227px;
+  width: 48px;
+  height: 48px;
+}
+.icon-time {
+  background-image: url(../img/sprite.png);
+  background-position: -212px -230px;
+  width: 40px;
+  height: 37px;
+}
+.icon-woman {
+  background-image: url(../img/sprite.png);
+  background-position: -392px -93px;
+  width: 55px;
+  height: 86px;
+}

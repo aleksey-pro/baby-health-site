@@ -1,0 +1,128 @@
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name='viewport' content="width=device-width,initial-scale=1")
+        title Детская медицина
+
+        meta(name="description", content="bs-starter-kit")
+        meta(name="keywords", content="")
+        meta(name="author", content="Aleksey Isaev")
+        //- link(rel="icon" type="image/png" href="/dev/img/favicon.png")
+
+        link(rel='stylesheet', href='style/app.css')
+
+    body
+        .wrapper
+            header
+                .header__top-line
+                .header__content.top
+                    .top__logo.icon-logo
+                    .top__icons
+                        mixin icon(name, cls)
+                            .top__icons-ico
+                              .icon-image(class=cls)
+                              p.icon-name= name 
+                        +icon('Гигиена', 'icon-measurment') 
+                        +icon('Помощь', 'icon-aid')
+                        +icon('Лекарства', 'icon-pills')
+                        +icon('Цифры', 'icon-time')
+                    .top__phone
+                       .top__phone-image.icon-phon-off
+                       .top__phone-num 
+                            span.gradient-text 0800-555
+                       .top__phone-txt мед центр МАМ
+                .header__nav                   
+                    each val in ['Главная', 'Советы', 'Болезни', 'Консультации', 'Контакты']
+                        .header__nav-item
+                            .header__nav-arrow &#8744; 
+                            a(href='#').header__nav-link= val  
+                    .search
+                        .input-form
+                            input.search__input(type='search' name='search' placeholder='Поиск по сайту')
+                            .search__image.icon-search
+            section.banner
+            section.thumbnails
+                .thumbnail
+                    .thumbnail__image.icon-doctor
+                    .thumbnail__caption.icon-conults
+                    .thumbnail__text        
+                        p.thumbnail__text-header.italic Новорожденный
+                        p 9 уроков здоровья младенцев. Грудное вскармливание и уход
+                        a(href='#').thumbnail__button подробнее
+                .thumbnail
+                    .thumbnail__image.icon-woman
+                    .thumbnail__caption.icon-pregnancy
+                    .thumbnail__text
+                        p.thumbnail__text-header.italic Новорожденный
+                        p 9 уроков здоровья младенцев. Грудное вскармливание и уход
+                        a(href='#').thumbnail__button  подробнее
+                .thumbnail
+                    .thumbnail__image.icon-rags
+                    .thumbnail__caption.icon-pelenki
+                    .thumbnail__text
+                        p.thumbnail__text-header.italic Новорожденный
+                        p 9 уроков здоровья младенцев. Грудное вскармливание и уход
+                        a(href='#').thumbnail__button подробнее
+                .thumbnail
+                    .thumbnail__image.icon-apple
+                    .thumbnail__caption.icon-diet
+                    .thumbnail__text
+                        p.thumbnail__text-header.italic Новорожденный
+                        p 9 уроков здоровья младенцев. Грудное вскармливание и уход
+                        a(href='#').thumbnail__button подробнее                                              
+            section.content
+                .content__block.remark
+                    .remark__heading
+                        .remark__img.icon-plus
+                        .remark__name памятка
+                            .remark__small-txt всякие советы и наставления                        
+                    .remark__thumbnail
+                        .remark__thumbnail-image.icon-babyandmom
+                        .remark__thumbnail-text Ваш ребенок взрослеет, и одни проблемы меняются на другие. Сначала мамы ждут, когда их дитя самостоятельно
+                            a(href='#').remark__thumbnail-link Читать...
+                    .remark__thumbnail
+                        .remark__thumbnail-image.icon-babyandmom1
+                        .remark__thumbnail-text Ваш ребенок взрослеет, и одни проблемы меняются на другие. Сначала мамы ждут, когда их дитя самостоятельно
+                            a(href='#').remark__thumbnail-link Читать...
+                    ul.remark__bottom
+                       li.remark__bottom-item
+                          a(href='#').remark__bottom-link.italic Новорожденный. 9 уроков здоровья  
+                       li.remark__bottom-item 
+                          a(href='#').remark__bottom-link.italic Грудное вскармливание и уход         
+                .content__block.advice
+                    .advice__heading
+                        .advice__img.icon-plus
+                        .advice__name советы врача
+                            .advice__small-txt все что доктор прописал           
+                    .advice__picture.icon-babyandmom2
+                    .advice__text
+                        .advice__text-heading.italic Как сохранить кожу здоровой
+                        p.advice__text-txt Однако, даже при идеальном уходе, никто не застрахован от неожиданностей: то появилось шелушение, то под подгузником покраснела кожа, то на животике – непонятные пятна…
+                        a(href='#').advice__text-link.italic Читать...
+                .content__block.health
+                    .health__heading 
+                        .health__img.icon-heart
+                        .health__name здоровье мамы
+                            .health__small-txt все о здоровье после родов              
+                    .health__newslink
+                        .health__newslink-heading.italic мамы
+                        p.health__newslink-text Наши встречи. МАМАстер-классы. Проект "Одобрено Волго-мамами".
+                        .health__newslink-link.italic Подробнее...
+                    .health-rek  
+                        .health-rek__heading
+                            .health-rek__img.icon-dialog                            
+                            .health-rek__name рекомендуем
+                                .health-rek__small-txt то что доктор прописал
+                        .health-rek__newslink
+                            .health-rek__newslink-heading.italic БЕРЕМЕННОСТЬ и РОДЫ
+                            p.health-rek__newslink-text Календарь беременности. Роддома Волгограда, рейтинг. Рассказы о родах.
+                            .health-rek__newslink-link.italic Подробнее...                     
+            footer
+                ul.footer-nav
+                    each val in ['Главная страница /', 'О компании /', 'Услуги /', 'Медицинские консультации /', 'Cвяжитесь с нами'] 
+                        li.footer-nav__item
+                            a(href='#').footer-nav__link= val
+                .footer-copy Copyright &copy; Clinic. Все права защищены
+    //- script(src="../js/vendor.js")
+    script(src="../js/scripts.js")

@@ -1,0 +1,17 @@
+{
+  "name": "bs-start-kit",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "alekseyisaev"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
